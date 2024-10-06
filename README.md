@@ -89,7 +89,7 @@ Asegúrate de tener instalados los siguientes componentes:
 
 ### Contribución
 
-    **Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
+**Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
 
 <ul>
    <li><p> Haz un fork del repositorio.</p></li>
