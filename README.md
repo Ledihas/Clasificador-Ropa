@@ -1,7 +1,6 @@
 
 # Proyecto Clasificador de Imágenes
-<hr>
-<br>
+
 <p>
 
 Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt, que permite cargar imágenes y enviarlas a un modelo de inteligencia artificial (IA) implementado en Python con TensorFlow a través de una API Flask. El modelo realiza predicciones basadas en las imágenes cargadas.
@@ -85,8 +84,11 @@ Asegúrate de tener instalados los siguientes componentes:
     <li><p>La predicción se mostrará en la interfaz.</p></li>
 </ul>
 <br>
+
 ### Contribución
+
 **Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
+
 <ul>
    <li><p> Haz un fork del repositorio.</p></li>
     <li><p>Crea una nueva rama (git checkout -b feature/nueva-caracteristica).</p></li>
