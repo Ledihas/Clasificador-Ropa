@@ -83,11 +83,13 @@ Asegúrate de tener instalados los siguientes componentes:
     <li><p>Haz clic en "Enviar Predicción" para enviar la imagen al modelo y recibir una predicción.</p></li>
     <li><p>La predicción se mostrará en la interfaz.</p></li>
 </ul>
-<br>
+
+
+
 
 ### Contribución
 
-**Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
+    **Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
 
 <ul>
    <li><p> Haz un fork del repositorio.</p></li>
