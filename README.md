@@ -1,32 +1,32 @@
 
-# Proyecto Clasificador de Imágenes
+# Proyecto Clasificador de Imágenes🧥👗
 
 <p>
 
-Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt, que permite cargar imágenes y enviarlas a un modelo de inteligencia artificial (IA) implementado en Python con TensorFlow a través de una API Flask. El modelo realiza predicciones basadas en las imágenes cargadas.En el proyecto se puede ver un módulo de Python 'llamado clasificand_ropa.py' en el cual esta impementado el codigo con el que se entrenó el modelo; el cual utiliza TensorFlow y el conjunto de datos Fashion MNIST. El modelo se entrena para clasificar imágenes de ropa en diferentes categorías utilizando una red neuronal convolucional (CNN).
+Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt, que permite cargar imágenes y enviarlas a un modelo de inteligencia artificial (IA) implementado en Python con TensorFlow a través de una API Flask. El modelo realiza predicciones basadas en las imágenes cargadas. En el proyecto se puede ver un módulo de Python llamado `clasificand_ropa.py`, en el cual está implementado el código con el que se entrenó el modelo; el cual utiliza TensorFlow y el conjunto de datos Fashion MNIST. El modelo se entrena para clasificar imágenes de ropa en diferentes categorías utilizando una red neuronal convolucional (CNN).
 
 </p>
 
-## Tabla de Contenidos
+## Tabla de Contenidos 📚
 
 - [Características](#características)
 - [Características de clasificand_ropa.py](#características-de-clasificand_ropa.py)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
-- [Uso de clasificand_ropa.py para entrenar un modelo](uso-de-clasificand_ropa.py-para-entrenar-un-modelo)
+- [Uso de clasificand_ropa.py para entrenar un modelo](#uso-de-clasificand_ropa.py-para-entrenar-un-modelo)
+- [Estructura de clasificand_ropa.py](#estructura-de-clasificand_ropa.py)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
-- [Estructura de clasificand_ropa.py](estructura-de-clasificand_ropa.py)
 
-## Características
+## Características ✨
 
-- Carga de imágenes en formatos PNG, JPG , JPEG y BMP.
+- Carga de imágenes en formatos PNG, JPG, JPEG y BMP.
 - Envío de imágenes a un modelo de IA para predicciones.
 - Visualización de la imagen cargada y el resultado de la predicción.
 
 
-## Características de clasificand_ropa.py
+## Características de clasificand_ropa.py 📊
 
 - Carga y preprocesamiento del conjunto de datos Fashion MNIST.
 - Normalización y aumento de datos para mejorar el rendimiento del modelo.
@@ -34,7 +34,7 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - Entrenamiento del modelo con visualización de la pérdida durante el entrenamiento.
 - Guardado del modelo entrenado para su uso posterior.
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas ⚙️
 
 - **C++**: Lenguaje de programación utilizado para la aplicación de escritorio.
 - **Qt**: Framework utilizado para desarrollar la interfaz gráfica.
@@ -44,7 +44,7 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - **TensorFlow Datasets**: Para cargar conjuntos de datos fácilmente.
 - **Matplotlib**: Para visualizar la evolución de la pérdida durante el entrenamiento.
 
-## Instalación
+## Instalación 🚀
 
 ### Requisitos Previos
 
@@ -68,20 +68,20 @@ Asegúrate de tener instalados los siguientes componentes:
    code .
    
    
-### Crear un entorno virtual (opcional pero recomendado):
+2. **Crear un entorno virtual (opcional pero recomendado)**:
 
       ```bash
       python -m venv venv
       source venv/bin/activate  # En Linux/Mac
       venv\Scripts\activate  # En Windows
 
-### Instalar las dependencias de Python:
+3. **Instalar las dependencias de Python**:
 
     ```bash 
     pip install flask tensorflow pillow tensorflow-datasets matplotlib
 
     
-### Compilar la aplicación Qt:
+4. **Compilar la aplicación Qt**:
 
     ```bash    
     mkdir build
@@ -89,18 +89,18 @@ Asegúrate de tener instalados los siguientes componentes:
     cmake ..
     make
 
-### Ejecutar el servidor Flask:
+5. **Ejecutar el servidor Flask**:
     ```bash
     python app.py
 
 
-### Ejecutar la aplicación Qt:
+6. **Ejecutar la aplicación Qt**:
     ```bash
     ./ropero  # Cambia 'ropero' por el nombre real del ejecutable si es diferente.
 
 
 
-### Uso:
+### Uso 🖼️:
 <ul>
     <li><p>Abre la aplicación.</p></li>
     <li><p>Haz clic en "Cargar Imagen" para seleccionar una imagen desde tu sistema.</p></li>
@@ -108,7 +108,7 @@ Asegúrate de tener instalados los siguientes componentes:
     <li><p>La predicción se mostrará en la interfaz.</p></li>
 </ul>
 
-### Uso de clasificand_ropa.py para entrenar un modelo:
+### Uso de clasificand_ropa.py para entrenar un modelo 🏋️‍♂️:
 <ul>
     <li><p>Asegúrate de que tienes todas las dependencias instaladas.</p></li>
     <li><p>Ejecuta el script: python clasificand_ropa.py.py</p></li>
@@ -116,7 +116,7 @@ Asegúrate de tener instalados los siguientes componentes:
     <li><p>Se generará un gráfico que muestra la evolución de la pérdida durante el entrenamiento.</p></li>
 </ul>
 
-### Estructura de clasificand_ropa.py
+## Estructura de clasificand_ropa.py 🗂️:
 El código principal realiza las siguientes tareas:
 
 -Carga del conjunto de datos: Utiliza tensorflow_datasets para cargar Fashion MNIST.
@@ -127,7 +127,7 @@ El código principal realiza las siguientes tareas:
 
 
 
-### Contribución
+### Contribución 🤝
 
 **Las contribuciones son bienvenidas. Si deseas contribuir a este proyecto, por favor sigue estos pasos:**
 
