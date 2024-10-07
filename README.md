@@ -17,6 +17,7 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - [Uso de clasificand_ropa.py para entrenar un modelo](uso-de-clasificand_ropa.py-para-entrenar-un-modelo)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
+- [Estructura de clasificand_ropa.py](estructura-de-clasificand_ropa.py)
 
 ## Características
 
