@@ -3,15 +3,18 @@
 
 <p>
 
-Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt, que permite cargar imágenes y enviarlas a un modelo de inteligencia artificial (IA) implementado en Python con TensorFlow a través de una API Flask. El modelo realiza predicciones basadas en las imágenes cargadas.
+Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt, que permite cargar imágenes y enviarlas a un modelo de inteligencia artificial (IA) implementado en Python con TensorFlow a través de una API Flask. El modelo realiza predicciones basadas en las imágenes cargadas.En el proyecto se puede ver un módulo de Python 'llamado clasificand_ropa.py' en el cual esta impementado el codigo con el que se entrenó el modelo; el cual utiliza TensorFlow y el conjunto de datos Fashion MNIST. El modelo se entrena para clasificar imágenes de ropa en diferentes categorías utilizando una red neuronal convolucional (CNN).
+
 </p>
 
 ## Tabla de Contenidos
 
 - [Características](#características)
+- [Características de clasificand_ropa.py](#características-de-clasificand_ropa.py)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Instalación](#instalación)
 - [Uso](#uso)
+- [Uso de clasificand_ropa.py para entrenar un modelo](uso-de-clasificand_ropa.py-para-entrenar-un-modelo)
 - [Contribución](#contribución)
 - [Licencia](#licencia)
 
@@ -21,6 +24,15 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - Envío de imágenes a un modelo de IA para predicciones.
 - Visualización de la imagen cargada y el resultado de la predicción.
 
+
+## Características de clasificand_ropa.py
+
+- Carga y preprocesamiento del conjunto de datos Fashion MNIST.
+- Normalización y aumento de datos para mejorar el rendimiento del modelo.
+- Implementación de una red neuronal convolucional (CNN).
+- Entrenamiento del modelo con visualización de la pérdida durante el entrenamiento.
+- Guardado del modelo entrenado para su uso posterior.
+
 ## Tecnologías Utilizadas
 
 - **C++**: Lenguaje de programación utilizado para la aplicación de escritorio.
@@ -28,6 +40,8 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - **Python**: Lenguaje utilizado para implementar el modelo de IA.
 - **TensorFlow**: Biblioteca utilizada para construir y entrenar el modelo de IA.
 - **Flask**: Framework utilizado para crear la API que sirve como intermediario entre la aplicación Qt y el modelo de IA.
+- **TensorFlow Datasets**: Para cargar conjuntos de datos fácilmente.
+- **Matplotlib**: Para visualizar la evolución de la pérdida durante el entrenamiento.
 
 ## Instalación
 
@@ -41,6 +55,8 @@ Asegúrate de tener instalados los siguientes componentes:
 - TensorFlow
 - Flask
 - Pillow (para manejar imágenes)
+- TensorFlow Datasets
+- Matplotlib
 
 ### Pasos para la Instalación
 
@@ -51,11 +67,18 @@ Asegúrate de tener instalados los siguientes componentes:
    code .
    
    
-   
+### Crear un entorno virtual (opcional pero recomendado):
+
+      ```bash
+      python -m venv venv
+      source venv/bin/activate  # En Linux/Mac
+      venv\Scripts\activate  # En Windows
+
 ### Instalar las dependencias de Python:
 
     ```bash 
-    pip install flask tensorflow pillow
+    pip install flask tensorflow pillow tensorflow-datasets matplotlib
+
     
 ### Compilar la aplicación Qt:
 
@@ -84,6 +107,22 @@ Asegúrate de tener instalados los siguientes componentes:
     <li><p>La predicción se mostrará en la interfaz.</p></li>
 </ul>
 
+### Uso de clasificand_ropa.py para entrenar un modelo:
+<ul>
+    <li><p>Asegúrate de que tienes todas las dependencias instaladas.</p></li>
+    <li><p>Ejecuta el script: python clasificand_ropa.py.py</p></li>
+    <li><p>El modelo se entrenará y se guardará en la carpeta 'save_models' como 'opa.h5'.</p></li>
+    <li><p>Se generará un gráfico que muestra la evolución de la pérdida durante el entrenamiento.</p></li>
+</ul>
+
+### Estructura de clasificand_ropa.py
+El código principal realiza las siguientes tareas:
+
+-Carga del conjunto de datos: Utiliza tensorflow_datasets para cargar Fashion MNIST.
+-Preprocesamiento: Redimensiona las imágenes, normaliza los valores y aplica aumentos a los datos.
+-Definición del modelo: Crea una red neuronal convolucional con varias capas.
+-Entrenamiento: Entrena el modelo utilizando los datos preprocesados y valida su rendimiento.
+-Visualización: Muestra la evolución de la pérdida durante el entrenamiento.
 
 
 
