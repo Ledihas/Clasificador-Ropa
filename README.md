@@ -118,12 +118,12 @@ Asegúrate de tener instalados los siguientes componentes:
 
 ## Estructura de clasificand_ropa.py 🗂️:
 El código principal realiza las siguientes tareas:
-
--Carga del conjunto de datos: Utiliza tensorflow_datasets para cargar Fashion MNIST.
--Preprocesamiento: Redimensiona las imágenes, normaliza los valores y aplica aumentos a los datos.
--Definición del modelo: Crea una red neuronal convolucional con varias capas.
--Entrenamiento: Entrena el modelo utilizando los datos preprocesados y valida su rendimiento.
--Visualización: Muestra la evolución de la pérdida durante el entrenamiento.
+   
+   -Carga del conjunto de datos: Utiliza tensorflow_datasets para cargar Fashion MNIST.
+   -Preprocesamiento: Redimensiona las imágenes, normaliza los valores y aplica aumentos a los datos.
+   -Definición del modelo: Crea una red neuronal convolucional con varias capas.
+   -Entrenamiento: Entrena el modelo utilizando los datos preprocesados y valida su rendimiento.
+   -Visualización: Muestra la evolución de la pérdida durante el entrenamiento.
 
 
 
