@@ -9,15 +9,15 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 
 ## Tabla de Contenidos 📚
 
-- [Características](#características)
-- [Características de clasificand_ropa.py](#características-de-clasificand_ropa.py)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Uso de clasificand_ropa.py para entrenar un modelo](#uso-de-clasificand_ropa.py-para-entrenar-un-modelo)
-- [Estructura de clasificand_ropa.py](#estructura-de-clasificand_ropa.py)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
+- [Características](#características-)
+- [Características de clasificand_ropa.py](#características-de-clasificand_ropa.py-)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas-)
+- [Instalación](#instalación-)
+- [Uso](#uso-)
+- [Uso de clasificand_ropa.py para entrenar un modelo](#uso-de-clasificand_ropa.py-para-entrenar-un-modelo-)
+- [Estructura de clasificand_ropa.py](#estructura-de-clasificand_ropa.py-)
+- [Contribución](#contribución-)
+- [Licencia](#licencia-)
 
 ## Características ✨
 
