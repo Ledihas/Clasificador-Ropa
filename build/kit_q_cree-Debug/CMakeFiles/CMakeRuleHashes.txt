@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+f2d4e2dba323347201fbd337a5bfbae7 CMakeFiles/ropero_autogen
+f2d4e2dba323347201fbd337a5bfbae7 CMakeFiles/ropero_autogen_timestamp_deps
+3ae1e2630a3c18e784d2c3bb25fa7b18 ropero_autogen/timestamp

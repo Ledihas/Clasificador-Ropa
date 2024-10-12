@@ -12,13 +12,17 @@
 #include <QFileDialog>
 #include <QBuffer>
 #include <QHttpMultiPart>
-
+#include "DialogResult.h"
+#include "QTimer"
+#include "QtConcurrent/QtConcurrent"
+#include <QFuture>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowTitle(" Ropero ");
 
 }
 
@@ -51,6 +55,7 @@ void MainWindow::on_load_button_clicked()
         ui->label->setText("Image Cargada" + fileName);
     }
 }
+
 
 
 void MainWindow::on_send_button_clicked()
@@ -96,21 +101,33 @@ void MainWindow::on_send_button_clicked()
                 QJsonObject jsonObj = jsonResponse.object();
                 int predictedClass = jsonObj["predicted_class"].toInt();
                 QString clases[10] = {"camiseta", "pantalon", "pullover", "vestido", "capa",
-                                    "sandalia", "camisa", "zapatilla deportiva", "bolsa", "botín"};
+                                      "sandalia", "camisa", "zapatilla deportiva", "bolsa", "botín"};
 
 
                 QString resultText =  clases[predictedClass];    //QString("Predicción: Clase %1").arg(predictedClass);
-                ui->label->setText(resultText);
+                DefinitiveResp = resultText;
+                qDebug() << " En Main Window" << resultText;
+                Dialog di(this);
+                recived();
+                di.exec();
+
             }
         } else {
             qDebug() << "Error:" << reply->errorString();
-            ui->label->setText("Error en la prediccion el mio");
+            DefinitiveResp = ("Error en la prediccion el mio");
+            Dialog di(this);
+            recived();
+            di.exec();
+
         }
         reply->deleteLater(); // Eliminar el objeto reply para evitar fugas de memoria
         multiPart->deleteLater(); // Eliminar el multipart después del envío
     });
 
+
+
 }
+
 
 
 void MainWindow::on_pushButton_clicked()

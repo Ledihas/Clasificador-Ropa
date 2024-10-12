@@ -24,7 +24,7 @@ Este proyecto es una aplicación de escritorio desarrollada en C++ utilizando Qt
 - Carga de imágenes en formatos PNG, JPG, JPEG y BMP.
 - Envío de imágenes a un modelo de IA para predicciones.
 - Visualización de la imagen cargada y el resultado de la predicción.
-
+- Predicción mostrada en un Dialog.
 
 ## Características de clasificand_ropa.py 📊
 
@@ -91,7 +91,7 @@ Asegúrate de tener instalados los siguientes componentes:
 
 5. **Ejecutar el servidor Flask**:
     ```bash
-    python app.py
+    python3 app.py
 
 
 6. **Ejecutar la aplicación Qt**:
@@ -104,15 +104,16 @@ Asegúrate de tener instalados los siguientes componentes:
 <ul>
     <li><p>Abre la aplicación.</p></li>
     <li><p>Haz clic en "Cargar Imagen" para seleccionar una imagen desde tu sistema.</p></li>
-    <li><p>Haz clic en "Enviar Predicción" para enviar la imagen al modelo y recibir una predicción.</p></li>
-    <li><p>La predicción se mostrará en la interfaz.</p></li>
+    <li><p>La imagen seleccionada se mostrará en la interfaz.</p></li>
+    <li><p>Haz clic en " Predecir " para enviar la imagen al modelo y recibir una predicción.</p></li>
+    <li><p>La predicción se mostrará en un cuadro de diálogo.</p></li>
 </ul>
 
 ### Uso de clasificand_ropa.py para entrenar un modelo 🏋️‍♂️:
 <ul>
     <li><p>Asegúrate de que tienes todas las dependencias instaladas.</p></li>
     <li><p>Ejecuta el script: python clasificand_ropa.py.py</p></li>
-    <li><p>El modelo se entrenará y se guardará en la carpeta 'save_models' como 'opa.h5'.</p></li>
+    <li><p>El modelo se entrenará y se guardará en la carpeta 'save_models' como 'ropa.h5'.</p></li>
     <li><p>Se generará un gráfico que muestra la evolución de la pérdida durante el entrenamiento.</p></li>
 </ul>
 

@@ -40,6 +40,11 @@ else()
     else()
         add_executable(ropero
             ${PROJECT_SOURCES}
+
+            DialogResult.h
+            DialogResult.cpp
+            DialogResult.ui
+
         )
     endif()
 endif()

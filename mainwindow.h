@@ -17,6 +17,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QString returnResp();
+    QString DefinitiveResp;
+    void recived();
+
 
 
 
@@ -30,6 +34,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QImage image; // Para almacenar la imagen cargada
+
 };
 
 
